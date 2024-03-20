@@ -1,0 +1,252 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#nav {
+    display: flex;
+    position: sticky;
+}
+
+#nav img {
+    height: 52px;
+    margin: 5px 5px;
+    padding: 0px 22px;
+}
+
+#nav ul {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+}
+
+#nav::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#nav ul li {
+    list-style: none;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 5px 30px;
+}
+
+#nav a:hover {
+    color: black;
+    border: 2px black solid;
+    background-color: rgb(167 94 69 / 28%);
+    border-radius: 20px;
+}
+
+/* section */
+#sec {
+    /* border: 2px purple solid; */
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 22px;
+}
+
+#sec::before {
+    content: "";
+    position: absolute;
+    background: url("../im2.jpg") no-repeat center/cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.97;
+}
+
+#sec h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+#sec p {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 10px 282px;
+}
+
+#sec button {
+    font-size: 1.3em;
+    border: lightcoral 1px solid;
+    background-color: rgb(169, 89, 71);
+    padding: 2px 22px;
+    font-family: 'Playfair Display', serif;
+    cursor: grab;
+    border-radius: 6px;
+}
+
+#sec button:hover {
+    background-color: rgb(39, 93, 123);
+    color: white;
+}
+
+/* Service Section  */
+
+.h-main {
+    text-align: center;
+    margin: 25px;
+    font-size: 3rem;
+    color: #0f0f0d;
+}
+
+#service {
+    /* border: 2px red solid; */
+    display: flex;
+    margin: 22px 22px;
+}
+
+#service .box1 {
+    background-color: rgb(200, 199, 199);
+    font-family: 'Playfair Display', serif;
+    border: 3px tomato solid;
+    border-radius: 22px;
+    margin: 2px 6px;
+    padding: 34px;
+}
+
+#service .box1 h2 {
+    text-align: center;
+    margin: 2vh;
+}
+
+#service .box1 p {
+    text-align: justify;
+}
+
+#service .box1 img {
+    height: 105px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Client Section */
+#client-section {
+    position: relative;
+    /* height: 244px; */
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url("../im1.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#client img {
+    height: 124px;
+}
+
+.h-client-section {
+    text-align: center;
+    margin: 2px 7px;
+    font-size: 3rem;
+}
+
+
+/* Contact Section */
+#contact {
+    position: relative;
+    /* padding: 22px ; */
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 3rem;
+    /* margin: 22px; */
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url("../im3.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 50%;
+}   
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+#contact-box .btn button{
+    cursor: pointer;
+    background-color: red;
+    width: 100%;
+    padding: 4px 150px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+/* Footer  */
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 4px 20px;
+}
